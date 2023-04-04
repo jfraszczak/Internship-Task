@@ -22,7 +22,7 @@ class IslandsCounter:
                     expanded_cells.append((row_cell - 1, col_cell))
 
             if row_cell < self.rows - 1:
-                if self.map[row_cell + 1][cell[1]] == 1 and self.visited_islands[row_cell + 1][col_cell] == 0:
+                if self.map[row_cell + 1][col_cell] == 1 and self.visited_islands[row_cell + 1][col_cell] == 0:
                     self.visited_islands[row_cell + 1][col_cell] = 1
                     expanded_cells.append((row_cell + 1, col_cell))
 
